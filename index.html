@@ -36,7 +36,7 @@
             <!--- Sidemenu -->
             <ul class="metismenu side-nav">
 
-                <li class="side-nav-item">
+                <li class="side-nav-item active">
                     <a href="#" class="side-nav-link">
                         <i class="fas fa-home"></i>
                         <span> Dashboards </span>
@@ -181,13 +181,106 @@
 
     <div class="content-page">
         <div class="content">
-            <div class="navbar-custom">
+            <div class="navbar-custom mobile">
                 <button class="button-menu-mobile open-left disable-btn">
                     <i class="fas fa-bars"></i>
                 </button>
+                <div class="float-left">
+                    <a href="./" class="logo">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo.svg" alt="Gran Cursos" height="30">
+                        </span>
+                    </a>
+                </div>
+                <div class="nav-user p-3 float-right">
+                    <a title="John Doe" href="#">
+                        <p class="account-user-avatar">
+                            <img src="assets/images/avatar.png" alt="JD" class="rounded-circle">
+                        </p>
+                    </a>
+                </div>
             </div>
-            <div class="container-fluid">
 
+            <div class="container-fluid">
+                <div class="navbar-custom rounded-sm row">
+                    <div class="col-xl-6 col-sm-6 p-0">
+                        <ul class="list-group list-group-horizontal pt-2 pl-3">
+                            <li class="list-group-item p-2">
+                                <a href="#" title="Todo">
+                                    <i class="far fa-check-square"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item p-2">
+                                <a href="#" title="Chat">
+                                    <i class="far fa-comment-alt"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item p-2">
+                                <a href="#" title="Email">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item p-2">
+                                <a href="#" title="Calendar">
+                                    <i class="far fa-calendar"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item p-2">
+                                <a href="#" title="Favorite">
+                                    <i class="far fa-star text-black-50"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-sm-6 p-0">
+                        <div class="float-right">
+                            <ul class="list-group list-group-horizontal pt-2 pl-3">
+                                <li class="list-group-item p-2">
+                                    <a href="#" title="English">
+                                        English
+                                    </a>
+                                </li>
+                                <li class="list-group-item p-2">
+                                    <a href="#" title="Alert">
+                                        <i class="far fa-bell"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item p-2">
+                                    <form id="form-seach-top" method="get" action="./">
+                                        <div class="input-group mb-3">
+                                            <input type="text" name="q" class="form-control" placeholder="Search here"
+                                                   aria-label="Search here">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary" type="submit" title="Search">
+                                                    <i class="fas fa-search"></i></button>
+                                                <button class="btn btn-outline-secondary" type="button"
+                                                        id="btn-cancel-search" title="Cancel">
+                                                    <i class="fas fa-search-minus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <a href="#" title="Search" id="btn-search">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-group-item p-2 ml-1 nav-user pr-0">
+                                    <a class="mr-0" title="John Doe" href="#">
+                                        <p>
+                                            <span class="account-user-name">John Doe</span>
+                                            <small class="account-position">Available</small>
+                                        </p>
+                                        <p class="account-user-avatar">
+                                            <img src="assets/images/avatar.png" alt="JD" class="rounded-circle">
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
@@ -223,6 +316,7 @@
     window.addEventListener('resize', configPage);
 
     $(function () {
+        $('#form-seach-top').hide();
         configPage();
         $('.button-menu-mobile').on('click', function () {
             $('body').toggleClass('sidebar-enable');
@@ -234,6 +328,16 @@
                 $(this).parent().toggleClass('mm-active');
             }
         });
+
+        $('#btn-search').on('click', function () {
+            $('#form-seach-top').show();
+            $(this).hide();
+        });
+
+        $('#btn-cancel-search').on('click', function () {
+            $('#btn-search').show();
+            $('#form-seach-top').hide();
+        })
     });
 </script>
 </body>
