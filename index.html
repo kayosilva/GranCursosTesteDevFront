@@ -231,7 +231,6 @@
 
         $('.side-nav-link').on('click', function () {
             if ($(this).next('ul') && !hasCondensed()) {
-                console.log('entrou');
                 $(this).next('ul').toggleClass('mm-collapse').toggleClass('mm-show');
                 $(this).parent().toggleClass('mm-active');
             }
