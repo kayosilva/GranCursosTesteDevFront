@@ -185,14 +185,14 @@
                 <button class="button-menu-mobile open-left disable-btn">
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="float-left">
+                <div class="float-left m-0 col-6 p-0">
                     <a href="./" class="logo">
                         <span class="logo-lg">
                             <img src="assets/images/logo.svg" alt="Gran Cursos" height="30">
                         </span>
                     </a>
                 </div>
-                <div class="nav-user p-3 float-right">
+                <div class="nav-user p-3 float-right m-0">
                     <a title="John Doe" href="#">
                         <p class="account-user-avatar">
                             <img src="assets/images/avatar.png" alt="JD" class="rounded-circle">
@@ -200,96 +200,120 @@
                     </a>
                 </div>
             </div>
-
-            <div class="container-fluid">
-                <div class="navbar-custom rounded-sm row">
-                    <div class="col-xl-6 col-sm-6 p-0">
+            <div class="navbar-custom rounded-sm row">
+                <div class="col-xl-6 col-sm-6 p-0">
+                    <ul class="list-group list-group-horizontal pt-2 pl-3">
+                        <li class="list-group-item p-2">
+                            <a href="#" title="Todo">
+                                <i class="far fa-check-square"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item p-2">
+                            <a href="#" title="Chat">
+                                <i class="far fa-comment-alt"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item p-2">
+                            <a href="#" title="Email">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item p-2">
+                            <a href="#" title="Calendar">
+                                <i class="far fa-calendar"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item p-2">
+                            <a href="#" title="Favorite">
+                                <i class="far fa-star text-black-50"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 col-sm-6 p-0">
+                    <div class="float-right">
                         <ul class="list-group list-group-horizontal pt-2 pl-3">
                             <li class="list-group-item p-2">
-                                <a href="#" title="Todo">
-                                    <i class="far fa-check-square"></i>
+                                <a href="#" title="English">
+                                    English
                                 </a>
                             </li>
                             <li class="list-group-item p-2">
-                                <a href="#" title="Chat">
-                                    <i class="far fa-comment-alt"></i>
+                                <a href="#" title="Alert">
+                                    <i class="far fa-bell"></i>
                                 </a>
                             </li>
                             <li class="list-group-item p-2">
-                                <a href="#" title="Email">
-                                    <i class="far fa-envelope"></i>
+                                <form id="form-seach-top" method="get" action="./">
+                                    <div class="input-group mb-3">
+                                        <input type="text" name="q" class="form-control" placeholder="Search here"
+                                               aria-label="Search here">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="submit" title="Search">
+                                                <i class="fas fa-search"></i></button>
+                                            <button class="btn btn-outline-secondary" type="button"
+                                                    id="btn-cancel-search" title="Cancel">
+                                                <i class="fas fa-search-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <a href="#" title="Search" id="btn-search">
+                                    <i class="fas fa-search"></i>
                                 </a>
                             </li>
-                            <li class="list-group-item p-2">
-                                <a href="#" title="Calendar">
-                                    <i class="far fa-calendar"></i>
-                                </a>
-                            </li>
-                            <li class="list-group-item p-2">
-                                <a href="#" title="Favorite">
-                                    <i class="far fa-star text-black-50"></i>
+
+                            <li class="list-group-item p-2 ml-1 nav-user pr-0">
+                                <a class="mr-0" title="John Doe" href="#">
+                                    <p>
+                                        <span class="account-user-name">John Doe</span>
+                                        <small class="account-position">Available</small>
+                                    </p>
+                                    <p class="account-user-avatar">
+                                        <img src="assets/images/avatar.png" alt="JD" class="rounded-circle">
+                                    </p>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xl-6 col-sm-6 p-0">
-                        <div class="float-right">
-                            <ul class="list-group list-group-horizontal pt-2 pl-3">
-                                <li class="list-group-item p-2">
-                                    <a href="#" title="English">
-                                        English
-                                    </a>
-                                </li>
-                                <li class="list-group-item p-2">
-                                    <a href="#" title="Alert">
-                                        <i class="far fa-bell"></i>
-                                    </a>
-                                </li>
-                                <li class="list-group-item p-2">
-                                    <form id="form-seach-top" method="get" action="./">
-                                        <div class="input-group mb-3">
-                                            <input type="text" name="q" class="form-control" placeholder="Search here"
-                                                   aria-label="Search here">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-outline-secondary" type="submit" title="Search">
-                                                    <i class="fas fa-search"></i></button>
-                                                <button class="btn btn-outline-secondary" type="button"
-                                                        id="btn-cancel-search" title="Cancel">
-                                                    <i class="fas fa-search-minus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <a href="#" title="Search" id="btn-search">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                </li>
-
-                                <li class="list-group-item p-2 ml-1 nav-user pr-0">
-                                    <a class="mr-0" title="John Doe" href="#">
-                                        <p>
-                                            <span class="account-user-name">John Doe</span>
-                                            <small class="account-position">Available</small>
-                                        </p>
-                                        <p class="account-user-avatar">
-                                            <img src="assets/images/avatar.png" alt="JD" class="rounded-circle">
-                                        </p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
                 </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="container-fluid">
                 <!-- start page title -->
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box">
-                            <h4 class="page-title">Card Actions</h4>
+
+                            <h4 class="page-title float-left text-title">Card Actions</h4>
+
+                            <ol class="breadcrumb float-left border-left rounded-0">
+                                <li class="breadcrumb-item">
+                                    <a href="javascript: void(0);" class="text-title">
+                                        <i class="fas fa-home"></i>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="javascript: void(0);" class="text-title">
+                                        eCommerce
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    Eletronics
+                                </li>
+                            </ol>
+                            <a href="#" title="Setup" class="page-title-right btn btn-dark btn-lg rounded-pill">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
                 <!-- end page title -->
+
+
                 Corpo
             </div>
 
