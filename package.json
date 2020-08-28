@@ -1,0 +1,30 @@
+{
+  "name": "grancursostestedevfront",
+  "version": "1.0.0",
+  "description": "Tela para teste para vaga de desenvolvedor front-end para Gran Cursos",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/http-server/bin/http-server -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayosilva/GranCursosTesteDevFront.git"
+  },
+  "keywords": [
+    "front",
+    "jquery",
+    "css",
+    "bootstrap",
+    "html"
+  ],
+  "author": "kayosilva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kayosilva/GranCursosTesteDevFront/issues"
+  },
+  "homepage": "https://github.com/kayosilva/GranCursosTesteDevFront#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
