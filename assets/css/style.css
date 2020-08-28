@@ -66,8 +66,6 @@
     transition: all .2s ease-out;
     top: 0;
     padding-top: 70px;
-    -webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
-    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
 }
 
 .side-nav .side-nav-link {
@@ -246,8 +244,6 @@ body[data-leftbar-compact-mode=condensed] .logo span.logo-sm {
     }
 
     .left-side-menu {
-        -webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
-        box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
         display: none;
         z-index: 10 !important;
     }
@@ -279,10 +275,7 @@ body[data-leftbar-compact-mode=condensed] .logo span.logo-sm {
 }
 
 .navbar-custom {
-    /*padding: 0 24px;*/
     background-color: #fff;
-    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1352);
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1352);
     min-height: 70px;
     position: fixed;
     left: 280px;
@@ -321,8 +314,6 @@ body[data-leftbar-compact-mode=condensed] .logo span.logo-sm {
 .navbar-custom .nav-user p.account-user-avatar img {
     width: 34px;
     height: 34px;
-    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1352);
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1352);
 }
 
 .account-user-name {
@@ -427,6 +418,11 @@ body[data-leftbar-compact-mode=condensed] .logo span.logo-sm {
     margin-left: 10px;
     background-color: transparent;
     font-size: 14px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1352) !important;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1352) !important;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {

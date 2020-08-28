@@ -18,7 +18,7 @@
 <body>
 <div class="wrapper">
     <!-- ========== Left Sidebar Start ========== -->
-    <div class="left-side-menu">
+    <div class="left-side-menu shadow">
 
         <!-- LOGO -->
         <a href="./" class="logo">
@@ -181,7 +181,7 @@
 
     <div class="content-page">
         <div class="content">
-            <div class="navbar-custom mobile">
+            <div class="navbar-custom mobile shadow">
                 <button class="button-menu-mobile open-left disable-btn">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -195,12 +195,12 @@
                 <div class="nav-user p-3 float-right m-0">
                     <a title="John Doe" href="#">
                         <p class="account-user-avatar">
-                            <img src="assets/images/avatar.png" alt="JD" class="rounded-circle">
+                            <img src="assets/images/avatar.png" alt="JD" class="shadow rounded-circle ">
                         </p>
                     </a>
                 </div>
             </div>
-            <div class="navbar-custom rounded-sm row">
+            <div class="navbar-custom rounded-sm row shadow">
                 <div class="col-xl-6 col-sm-6 p-0">
                     <ul class="list-group list-group-horizontal pt-2 pl-3">
                         <li class="list-group-item p-2">
@@ -270,7 +270,7 @@
                                         <small class="account-position">Available</small>
                                     </p>
                                     <p class="account-user-avatar">
-                                        <img src="assets/images/avatar.png" alt="JD" class="rounded-circle">
+                                        <img src="assets/images/avatar.png" alt="JD" class="rounded-circle shadow">
                                     </p>
                                 </a>
                             </li>
@@ -312,9 +312,77 @@
                     </div>
                 </div>
                 <!-- end page title -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <p>Filters</p>
+                        </div>
+                        <div class="row bg-white rounded shadow p-3 mr-1">
+                            <form method="post" id="form-filter" class="col-12">
+                                <fieldset class="form-group">
+                                    <div class="row">
+                                        <legend class="col-form-label col-sm-12 pt-0">Multi Range</legend>
+                                        <div class="col-sm-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="rd1">
+                                                <label class="form-check-label" for="rd1">
+                                                    $10
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="rd2">
+                                                <label class="form-check-label" for="rd2">
+                                                    $10-$100
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="rd3">
+                                                <label class="form-check-label" for="rd3">
+                                                    $100-$500
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="rd4" checked>
+                                                <label class="form-check-label" for="rd4">
+                                                    All
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="formControlRange" class="float-left">Slider</label>
+                                    <label for="formControlRange" class="float-right">1.99 - 4098</label>
+                                    <input type="range" class="form-control-range" id="formControlRange">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <p>7,618 results found in 5ms</p>
+                        </div>
+                        <div class="row">
+                            <div class="input-group mb-3 shadow rounded">
+                                <input type="text" class="form-control border-right-0 border-light"
+                                       placeholder="Search hear"
+                                       aria-label="Search here">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-light border-left-0" type="button">
+                                        <i class="fas fa-search text-black-50"></i></button>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bg-white rounded shadow p-3">
+                            asdf
+                        </div>
 
-
-                Corpo
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
             </div>
 
         </div>
