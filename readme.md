@@ -24,5 +24,9 @@ Tendo em vista que você já tem o node instalado na máquina, execute os comand
 Se tudo der certo você verá no terminal que o node subiu um serve localhost na porta 3000, pronto, basta abrir o browser
  e digitar na barra de nagevaão http://localhost:3000
  
+###### Versão online
+Você pode visualizar esta página online no _github_, para isso acesse:
+https://kayosilva.github.io/GranCursosTesteDevFront/
+
  
- Obrigado!
+ That's all folks!
